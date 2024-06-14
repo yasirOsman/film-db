@@ -1,0 +1,8 @@
+---
+id: f2627cbd-aaa8-4022-bd46-14fc20335810
+blueprint: movie
+title: 'The Life of David Gale'
+release_date: '2003-02-21'
+overview: 'A man against capital punishment is accused of murdering a fellow activist and is sent to death row.'
+genres: '[{"id": 18, "name": "Drama"}, {"id": 53, "name": "Thriller"}, {"id": 80, "name": "Crime"}]'
+---
