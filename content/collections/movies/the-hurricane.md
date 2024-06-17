@@ -1,8 +1,11 @@
 ---
-id: 992d36af-c710-4c12-a63a-4d8efc702c53
+id: 94dd5c97-ddbf-4fde-97ff-a563d1509a83
 blueprint: movie
 title: 'The Hurricane'
 release_date: '1999-09-17'
 overview: 'The story of Rubin "Hurricane" Carter, a boxer wrongly imprisoned for murder, and the people who aided in his fight to prove his innocence.'
-genres: '[{"id": 18, "name": "Drama"}]'
+genres:
+  -
+    id: 18
+    name: Drama
 ---

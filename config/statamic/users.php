@@ -133,8 +133,9 @@ return [
     |
     */
 
+    // updated the guard for the CP to be statamic in order to avoid conflict with the application users
     'guards' => [
-        'cp' => 'web',
+        'cp' => 'statamic',
         'web' => 'web',
     ],
 

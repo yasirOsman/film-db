@@ -1,8 +1,11 @@
 ---
-id: 254086b7-2f82-4a06-9683-0fdfda4ed1ae
+id: 67565bc9-2aea-4dac-b5bd-b652db540264
 blueprint: movie
 title: 'Held Up'
 release_date: '1999-10-08'
 overview: "While they're on vacation in the Southwest, Rae finds out her man Michael spent their house money on a classic car, so she dumps him, hitching a ride to Vegas for a flight home. A kid promptly steals Michael's car, leaving him at the Zip &amp; Sip, a convenience store. Three bumbling robbers promptly stage a hold up. Two take off with the cash stranding the third, with a mysterious crate, just as the cops arrive. The robber takes the store hostage. As incompetent cops bring in a SWAT team and try a by-the-book rescue, Michael has to keep the robber calm, find out what's in the crate, aid the negotiations, and get back to Rae. The Stockholm Syndrome asserts its effect."
-genres: '[{"id": 35, "name": "Comedy"}]'
+genres:
+  -
+    id: 35
+    name: Comedy
 ---

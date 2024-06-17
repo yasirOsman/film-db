@@ -1,7 +1,10 @@
 ---
-id: d811f81f-51b4-4cdb-988f-1c8b30c5c252
+id: 782ca70a-867c-4f38-b9b2-e4c6d8eafd90
 blueprint: movie
 title: 'Food Chains'
 release_date: '2014-04-26'
-genres: '[{"id": 99, "name": "Documentary"}]'
+genres:
+  -
+    id: 99
+    name: Documentary
 ---

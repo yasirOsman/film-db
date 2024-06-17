@@ -1,8 +1,14 @@
 ---
-id: 57179e2c-23e2-4cc6-98e8-2c4f820d2b0e
+id: e8aa8746-8e13-4485-8225-a6199aba8421
 blueprint: movie
 title: 'Independence Daysaster'
 release_date: '2013-06-27'
 overview: 'When Earth is attacked by a hostile alien force, a small town firefighter and a rogue SETI scientist team up to activate the only technology capable of defeating the invaders.'
-genres: '[{"id": 28, "name": "Action"}, {"id": 878, "name": "Science Fiction"}]'
+genres:
+  -
+    id: 28
+    name: Action
+  -
+    id: 878
+    name: 'Science Fiction'
 ---

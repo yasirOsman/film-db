@@ -1,0 +1,98 @@
+<div class="flex mt-20">
+  <div>
+    <div class="flex mx-4 sm:mx-8 lg:mx-20 bg-white rounded-lg shadow-md p-6 mt-3">
+      <form action="{{ url:current }}" method="GET" class="space-y-4">
+        <input type="text" name="q" placeholder="Search by movie title..." class="px-4 py-2 border rounded-md w-full" value="{{ get:q }}">
+        <div class="space-y-2">
+          <span>Select Genres:</span>
+          <div class="flex items-center">
+            <input type="checkbox" name="genres" value="Action" id="genre_Action" class="mr-2">
+            <label for="genre_Action">Action</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" name="genres" value="Adventure" id="genre_Adventure" class="mr-2">
+            <label for="genre_Adventure">Adventure</label>
+          </div>
+          <!-- Add more genres as needed -->
+        </div>
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 px-4">Search</button>
+      </form>
+    </div>
+  </div>
+  <div>
+    {{ if get:q }}
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md mt-3 sm:mr-3" style="overflow-y: auto; height: 600px;">
+      {{ search:results paginate="10" index="default" as="movie"}}
+      {{ if no_results }}
+      <h2>No results found for {{ get:genres }}.</h2>
+      {{ else }}
+      {{ movie }}
+      <div class="md:flex mb-4">
+        <div class="md:flex-shrink-0">
+          <!-- add image of the movie -->
+          <img class="h-48 w-full object-cover md:w-48" alt="{{ title }}">
+        </div>
+        <div class="p-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Movie</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{ title }}</a>
+          <p class="mt-2 text-gray-500">
+            {{ overview }}
+          </p>
+          <div class="mt-4">
+            <span class="text-gray-600">Release Date:</span>
+            <span class="text-gray-900">{{ release_date }}</span>
+            {{genres}}
+            <span>{{name}}</span>{{/genres}}
+          </div>
+        </div>
+      </div>
+      {{ /movie }}
+      {{ /if }}
+    </div>
+    {{ paginate }}
+    {{ partial:partials.pagination
+    prev_page="{prev_page}"
+    next_page="{next_page}"
+    current_page="{current_page}"
+    total_pages="{total_pages}"
+}}
+    {{ /paginate }}
+    {{ /search:results }}
+    {{ else }}
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md mt-3" style="overflow-y: auto; height: 600px;">
+      {{ collection:movies paginate="10" as="movie" }}
+      {{ if no_results }}
+      <p>No movies found.</p>
+      {{ else }}
+      {{ movie }}
+      <div class="md:flex mb-4">
+        <div class="md:flex-shrink-0">
+          <img class="h-48 w-full object-cover md:w-48" src="https://example.com/posters/movie.jpg" alt="{{ title }}">
+        </div>
+        <div class="p-6">
+          <a href="{{url:current}}" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">{{ title }}</a>
+          <p class="mt-2 text-gray-500">
+            {{ overview }}
+          </p>
+          <div class="mt-4">
+            <span class="text-gray-600">Release Date:</span>
+            <span class="text-gray-900">{{ release_date }}</span>
+          </div>
+        </div>
+      </div>
+      {{ /movie }}
+      {{ /if }}
+    </div>
+    {{ paginate }}
+    {{ paginate }}
+    {{ partial:partials.pagination
+    prev_page="{prev_page}"
+    next_page="{next_page}"
+    current_page="{current_page}"
+    total_pages="{total_pages}"
+}}
+    {{ /paginate }}
+    {{ /collection:movies }}
+    {{/if}}
+  </div>
+</div>

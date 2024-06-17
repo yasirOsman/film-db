@@ -1,8 +1,11 @@
 ---
-id: eb2aa1ec-f609-462f-98f1-181bcd5ce7c8
+id: d0c3d62f-2b96-4549-8f05-8e81e01f4512
 blueprint: movie
 title: Rosewater
 release_date: '2014-11-07'
 overview: "In 2009, Iranian Canadian journalist Maziar Bahari was covering Iran's volatile elections for Newsweek. One of the few reporters living in the country with access to US media, he made an appearance on The Daily Show with Jon Stewart, in a taped interview with comedian Jason Jones. The interview was intended as satire, but if the Tehran authorities got the joke they didn't like it - and it would quickly came back to haunt Bahari when he was rousted from his family home and thrown into prison. Making his directorial debut, Jon Stewart tells the tale of Bahari's months-long imprisonment and interrogation in this powerful and affecting docudrama featuring a potent and performance by Gael García Bernal recounting Bahari's efforts to maintain his hope and his sanity in the face of isolation and persecution-through memories of his family, recollections of the music he loves, and thoughts of his wife and unborn child."
-genres: '[{"id": 18, "name": "Drama"}]'
+genres:
+  -
+    id: 18
+    name: Drama
 ---

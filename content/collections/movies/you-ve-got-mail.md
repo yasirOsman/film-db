@@ -1,8 +1,14 @@
 ---
-id: a3fad5a0-e2d1-42f3-a4db-4635f99dcada
+id: 4dc8da30-a545-4488-8d5b-a1cdc9c3eab2
 blueprint: movie
 title: "You've Got Mail"
 release_date: '1998-12-17'
 overview: "Book superstore magnate, Joe Fox and independent book shop owner, Kathleen Kelly fall in love in the anonymity of the Internet – both blissfully unaware that he's putting her out of business."
-genres: '[{"id": 35, "name": "Comedy"}, {"id": 10749, "name": "Romance"}]'
+genres:
+  -
+    id: 35
+    name: Comedy
+  -
+    id: 10749
+    name: Romance
 ---

@@ -1,8 +1,11 @@
 ---
-id: f6cac92c-2394-4c59-afd9-afe8a5a06d85
+id: b9f74ef1-5443-44f6-af00-8730dec0d5eb
 blueprint: movie
 title: 'Everything Put Together'
 release_date: '2001-11-02'
 overview: 'Everything Put Together is a 2000 film directed by Marc Forster starring Radha Mitchell and Megan Mullally.'
-genres: '[{"id": 18, "name": "Drama"}]'
+genres:
+  -
+    id: 18
+    name: Drama
 ---

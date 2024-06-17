@@ -1,8 +1,14 @@
 ---
-id: dd6071c8-8c9e-414f-ab61-678dd8f2b0fd
+id: d60ebcea-81c2-4e08-8bc5-92709ddc0ba0
 blueprint: movie
 title: 'Malcolm X'
 release_date: '1992-11-18'
 overview: 'The biopic of the controversial and influential Black Nationalist leader.'
-genres: '[{"id": 18, "name": "Drama"}, {"id": 36, "name": "History"}]'
+genres:
+  -
+    id: 18
+    name: Drama
+  -
+    id: 36
+    name: History
 ---

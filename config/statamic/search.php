@@ -23,12 +23,14 @@ return [
     |
     */
 
+    // created search indexes for the title and genres field and made the movies collection searchable
+
     'indexes' => [
 
         'default' => [
             'driver' => 'local',
-            'searchables' => 'all',
-            'fields' => ['title'],
+            'searchables' => 'collection:movies',
+            'fields' => ['title','genres'],
         ],
 
         // 'blog' => [

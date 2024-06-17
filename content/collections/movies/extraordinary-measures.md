@@ -1,8 +1,11 @@
 ---
-id: 5570daef-6633-4a20-9848-02f9b453bc3d
+id: d32b6cf2-44d0-46a9-bb94-63fae00af507
 blueprint: movie
 title: 'Extraordinary Measures'
 release_date: '2010-01-21'
 overview: 'Working-class father John Crowley is finally on the fast track to corporate success when his two young children, Megan and Patrick, are diagnosed with Pompe disease - a condition that prevents the body from breaking down sugar. With the support of his wife, Aileen, John ditches his career and teams with unconventional specialist Dr. Robert Stonehill to found a bio-tech company and develop a cure in time to save the lives of Megan and Patrick. As Dr. Stonehill works tirelessly to prove the theories that made him the black sheep of the medical community, a powerful bond is forged between the two unlikely allies.'
-genres: '[{"id": 18, "name": "Drama"}]'
+genres:
+  -
+    id: 18
+    name: Drama
 ---

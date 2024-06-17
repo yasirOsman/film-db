@@ -1,8 +1,11 @@
 ---
-id: d2434249-7893-4801-be42-72b464a2069e
+id: 7e86f241-41ad-4d54-a54a-8acf97291c47
 blueprint: movie
 title: Driven
 release_date: '2001-04-27'
 overview: "Talented rookie race-car driver Jimmy Bly has started losing his focus and begins to slip in the race rankings. It's no wonder, with the immense pressure being shoveled on him by his overly ambitious promoter brother as well as Bly's romance with his arch rival's girlfriend Sophia. With much riding on Bly, car owner Carl Henry brings former racing star Joe Tanto on board to help Bly. To drive Bly back to the top of the rankings, Tanto must first deal with the emotional scars left over from a tragic racing accident which nearly took his life."
-genres: '[{"id": 28, "name": "Action"}]'
+genres:
+  -
+    id: 28
+    name: Action
 ---

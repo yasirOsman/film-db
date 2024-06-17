@@ -19,7 +19,7 @@ class ImportMovies extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Import data from the csv file and create a Movies collection from it';
 
     /**
      * Execute the console command.
@@ -33,6 +33,8 @@ class ImportMovies extends Command
         $records = $csv->getRecords();
 
         foreach ($records as $record) {
+             $genres = json_decode($record['genres'], true);
+
             Entry::make()
                 ->collection('movies')
                 ->slug($this->slugify($record['title']))
@@ -40,8 +42,7 @@ class ImportMovies extends Command
                     'title' => $record['title'],
                     'release_date' => $record['release_date'],
                     'overview' => $record['overview'],
-                    'genres' => $record['genres'],
-                    // Add other fields as necessary
+                    'genres' => $genres,
                 ])
                 ->save();
         }
@@ -51,6 +52,10 @@ class ImportMovies extends Command
         return 0;
     }
 
+    /**
+     * function to create the slug for the movie item from the given string
+     * which in this case will be the title.
+     */
     protected function slugify($string)
     {
         return strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $string)));

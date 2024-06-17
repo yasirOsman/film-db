@@ -3,3 +3,53 @@ revisions: false
 date_behavior:
   past: public
   future: private
+
+fieldset: movie
+
+columns:
+  - title
+  - release_date
+  - genres
+
+sort:
+  - title: asc
+
+taxonomies:
+  - genre
+
+blueprints:
+  - title: 'Movie'
+    fields:
+      - name: title
+        handle: title
+        field:
+          type: text
+          display: Title
+          validate: required|string
+
+      - name: release_date
+        handle: release_date
+        field:
+          type: date
+          display: Release Date
+
+      - name: genres
+        handle: genres
+        field:
+          type: array
+          display: Genres
+          instructions: 'Select genres for the movie.'
+          validation: required|array
+          fields:
+            - handle: id
+              field:
+                type: number
+                display: ID
+                validate: required|integer
+
+            - handle: name
+              field:
+                type: text
+                display: Name
+                validate: required|string
+

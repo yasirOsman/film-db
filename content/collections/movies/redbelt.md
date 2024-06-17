@@ -1,8 +1,11 @@
 ---
-id: bcf57e9c-51a5-45fb-9c81-215189b38fc0
+id: 88b671a7-0bd4-416a-b7f4-87443afcbed4
 blueprint: movie
 title: Redbelt
 release_date: '2008-04-07'
 overview: "Is there room for principle in Los Angeles? Mike Terry teaches jujitsu and barely makes ends meet. His Brazilian wife, whose family promotes fights, wants to see Mike in the ring making money, but to him competition is degrading. A woman sideswipes Mike's car and then, after an odd sequence of events, shoots out the studio's window. Later that evening, Mike rescues an action movie star in a fistfight at a bar. In return, the actor befriends Mike, gives him a gift, offers him work on his newest film, and introduces Mike's wife to his own - the women initiate business dealings. Then, things go sour all at once, Mike's debts mount, and going into the ring may be his only option."
-genres: '[{"id": 18, "name": "Drama"}]'
+genres:
+  -
+    id: 18
+    name: Drama
 ---

@@ -1,8 +1,11 @@
 ---
-id: ccd63b63-523d-47c6-a31c-399e43197d4b
+id: 843fb533-7163-4aa2-ad92-1349426f5946
 blueprint: movie
 title: 'The Best Little Whorehouse in Texas'
 release_date: '1982-07-23'
 overview: 'The town sheriff and a madame team up to stop a television evangelist from shutting down the local whorehouse, the famed "Chicken Ranch."'
-genres: '[{"id": 35, "name": "Comedy"}]'
+genres:
+  -
+    id: 35
+    name: Comedy
 ---
